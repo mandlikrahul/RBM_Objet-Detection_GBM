@@ -34,7 +34,7 @@
 
     3. Install dependencies
     pip install -r requirements.txt
-```
+    ```
 # 6. Usage:
 
      Run Full Pipeline (Training + Evaluation)
@@ -43,9 +43,9 @@
     python main.py
     ```
 
-You will be prompted: **"Do you need Complete Execution?"**
-    - **Yes** — runs data loading, training, evaluation, and plotting for both datasets
-    - **No** — skips training and only plots previously saved results
+You will be prompted: "Do you need Complete Execution?"
+    - Yes — runs data loading, training, evaluation, and plotting for both datasets
+    - No — skips training and only plots previously saved results
 
     ### Run GUI Demo
 
