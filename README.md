@@ -16,6 +16,47 @@
 
 
 # 4. Dataset Links :
+
     1. Coco dataset : https://cocodataset.org/#home 
     2. Open Image V7 : https://storage.googleapis.com/openimages/web/download_v7.html 
     
+
+# 5. Installation:
+```bash
+     1. Clone the repository
+    git clone https://github.com/<your-username>/RBM_Objet-Detection_GBM.git
+    cd RBM_Objet-Detection_GBM
+
+     2. Create a virtual environment (recommended)
+    python -m venv venv
+    venv\Scripts\activate        # Windows
+    # source venv/bin/activate   # Linux/macOS
+
+    3. Install dependencies
+    pip install -r requirements.txt
+```
+# 6. Usage:
+
+     Run Full Pipeline (Training + Evaluation)
+
+    ```bash
+    python main.py
+    ```
+
+You will be prompted: **"Do you need Complete Execution?"**
+    - **Yes** — runs data loading, training, evaluation, and plotting for both datasets
+    - **No** — skips training and only plots previously saved results
+
+    ### Run GUI Demo
+
+    ```bash
+    python GUI.py
+    ```
+
+    Steps in the GUI:
+    1. Click Load DB1 (COCO) or **Load DB2** (Open Images) to load a pre-trained model
+    2. Click Load Image to select a test image from the Dataset folder
+    3. Click Preprocessing to apply CLAHE-based enhancement
+    4. Click Model Prediction to run inference and display detected bounding boxes
+
+
